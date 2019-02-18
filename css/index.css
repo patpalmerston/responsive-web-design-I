@@ -67,6 +67,14 @@ h1, h2, h3, h4, h5 {
   width: 880px;
   /* TB LR */
   margin: 0 auto;
+  max-width: 880px;
+}
+
+@media(max-width: 800px){
+  .container{
+      max-width: 800px;
+      margin: 0 auto;
+  }
 }
 
 /* header */
@@ -79,6 +87,23 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+@media(max-width: 500px) {
+  header {
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+/*--------------------*/
+
+@media(max-width: 500px) {
+  .test {
+    border: 1px solid red;
+  }
+}
+/*--------------------*/
 
 header nav {
   display: inline-block;
@@ -87,12 +112,31 @@ header nav {
   margin-top: 35px;
 }
 
+/* @media(max-width: 500px) {
+  header nav {
+    min-width: 90%;
+    height: 80px;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+} */
+
 header nav a {
   display: inline-block;
   margin-right: 65px;
   font-size: 14px;
   color: gray;
   text-decoration: none;
+}
+
+@media(max-width: 500px) {
+  header nav a {
+    /* min-width: 90%;
+    min-height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center; */
+  }
 }
 
 header nav a:hover {
@@ -174,12 +218,19 @@ header .logo {
 
 @media(max-width: 800px) {
   .main-content {
-    width: 90%
+    width: 90%;
  }
 }
 
 .main-content .top-content {
   padding: 0 10px;
+}
+
+@media(max-width: 800px) {
+  .main-content .top-content {
+    /* display: flex;
+    align-items: flex-start; */
+ }
 }
 
 .main-content .top-content .text-content {
@@ -190,7 +241,7 @@ header .logo {
 
 @media(max-width: 800px) {
   .main-content .top-content .text-content {
-    width: 300px;
+    width: 45%;
  }
 }
 
@@ -213,6 +264,13 @@ header .logo {
   padding: 0 10px;
 }
 
+@media(max-width: 800px) {
+  .main-content .bottom-content  {
+    width: 90%;
+    display: flex;
+ }
+}
+
 .main-content .bottom-content .text-content {
   width: 275px;
   display: inline-block;
@@ -221,7 +279,7 @@ header .logo {
 
 @media(max-width: 800px) {
   .main-content .bottom-content .text-content {
-    width: 200px;
+    width: 33.333%;
  }
 }
 
